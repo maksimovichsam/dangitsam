@@ -1,0 +1,91 @@
+.bold {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #3759a9;
+}
+
+.italic {
+    font-style: italic;
+    text-align: center;
+    margin: 1rem 0;
+    color: #3759a9;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bullet-points {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #3759a9;
+}
+
+.bullet-points div {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.bullet-points div::before {
+    content: "•";
+    position: absolute;
+    left: -10px;
+    color: #3759a9;
+}
+
+.bullet-points div:first-child::before {
+    display: none;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.links-container img {
+    height: 250px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.links-container img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .bold {
+        font-size: 1.25rem;
+        padding: 0 1rem;
+    }
+
+    .italic {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .bullet-points {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .bullet-points div::before {
+        display: none;
+    }
+
+    .links-container {
+        gap: 1.5rem;
+    }
+
+    .links-container img {
+        height: 150px;
+    }
+}

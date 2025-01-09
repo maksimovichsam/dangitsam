@@ -1,0 +1,36 @@
+.tab-menu {
+    margin-top: 50px;
+}
+
+.tab-headers {
+    display: flex;
+    cursor: pointer;
+}
+
+.tab-header {
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: normal;
+    color: #3759a9;
+    border-bottom: none;
+    transition: all 0.3s ease;
+}
+
+.tab-header.active {
+    border-bottom: 2px solid #3759a9;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 20px;
+    text-align: center;
+    min-height: 600px;
+    min-width: 700px;
+}
+
+@media (max-width: 700px) {
+    .tab-content {
+        min-width: initial;
+    }
+}
